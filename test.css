@@ -1,0 +1,116 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6DB2E0, #73C990);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    background-color: #b9acac;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+.form-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.label-container {
+    display: flex;
+    flex-direction: column;
+    flex: 0.15; /* Adjust the flex value as needed */
+    align-items: center;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+/* Narrower dropdown fields */
+select {
+    width: 30%; /* Set desired width for dropdown fields */
+}
+
+button {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    padding: 8px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Indicators styles */
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* Center input fields horizontally */
+    margin-top: 10px;
+}
+
+.indicators-label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.disaggregation-label {
+    font-size: 12px;
+    color: #888888;
+    margin-top: 5px;
+}
+
+.indicators-input {
+    width: 30%; /* Set desired width */
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.indicators-input:focus {
+    border-color: #007bff;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 800px) {
+    .label-container {
+        flex: 0.3; /* Adjust the flex value as needed */
+    }
+    .indicators-input {
+        width: 100%;
+    }
+}

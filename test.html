@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KCO OUTPUT TRACKER</title>
+    <link rel="stylesheet" href="test.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weekly Output Tracker</h1>
+        <form id="indicatorForm">
+            <div class="form-row">
+                <div class="label-container">
+                    <label for="officeName">Office Name:</label>
+                </div>
+                <select id="officeName" required>
+                    <option value="">Select Office</option>
+                    <option value="Nairobi">Nairobi</option>
+                    <option value="Wajir">Wajir</option>
+                    <option value="Mandera">Mandera</option>
+                    <option value="Turkana">Turkana</option>
+                    <option value="Garissa">Garissa</option>
+                    <option value="Dadaab">Dadaab</option>
+                    <option value="Samburu">Samburu</option>
+                    <option value="Bungoma">Bungoma</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <div class="label-container">
+                    <label for="theme">Select Theme:</label>
+                </div>
+                <select id="theme" required>
+                    <option value="">Select Theme</option>
+                    <option value="Child Protection">Child Protection</option>
+                    <option value="Education">Education</option>
+                    <option value="WASH">WASH</option>
+                    <option value="Health">Health</option>
+                    <option value="Nutrition">Nutrition</option>
+                    <option value="FSL">FSL</option>
+                </select>
+            </div>
+    
+            <div id="indicatorsContainer">
+                <!-- Indicator fields will be dynamically added here based on the selected theme -->
+            </div>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>
